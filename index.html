@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>Criar uma Conta</h2>
+      </div>
+
+      <form action="https://formsubmit.io/send/d2231a96-0c64-410b-9705-f201164cc4f7" id="form" class="form">
+        <div class="form-control">
+          <label for="userName">Nome do Usuário</label>
+          <input
+            type="text"
+            id="userName"
+            placeholder="Digite seu nome de usuário"
+          />
+          <!-- ícone de erro-->
+          <i class="fas fa-exclamation-circle"></i>
+          <!-- ícone de sucesso -->
+          <i class="fas fa-check-circle"></i>
+          <!-- mostrará a mensagem de erro-->
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="email">E-mail</label>
+          <input type="text" id="email" placeholder="Digite seu e-mail" />
+          <!-- ícone de erro-->
+          <i class="fas fa-exclamation-circle"></i>
+          <!-- ícone de sucesso -->
+          <i class="fas fa-check-circle"></i>
+          <!-- mostrará a mensagem de erro-->
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" />
+          <!-- ícone olho aberto -->
+          <i id="openEye" class="fas fa-eye" onclick="showOrHidePassword()"></i>
+          <!-- ícone olho fechado -->
+          <i id="closeEye" class="fas fa-eye-slash" onclick="showOrHidePassword()"></i>
+
+          <!-- ícone de erro-->
+          <i class="fas fa-exclamation-circle"></i>
+          <!-- ícone de sucesso -->
+          <i class="fas fa-check-circle"></i>
+          <!-- mostrará a mensagem de erro-->
+          <small>Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label for="passwordConfirmation">Confirme sua Senha</label>
+          <input
+            type="password"
+            id="passwordConfirmation"
+            placeholder="Digite sua senha novamente"
+          />
+          <!-- ícone olho aberto -->
+          <i id="openEyeConfirmation" class="fas fa-eye" onclick="showOrHidePasswordConfirmation()"></i>
+          <!-- ícone olho fechado -->
+          <i id="closeEyeConfirmation" class="fas fa-eye-slash" onclick="showOrHidePasswordConfirmation()"></i>
+
+          <!-- ícone de erro-->
+          <i class="fas fa-exclamation-circle"></i>
+          <!-- ícone de sucesso -->
+          <i class="fas fa-check-circle"></i>
+          <!-- mostrará a mensagem de erro-->
+          <small>Mensagem de erro</small>
+        </div>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <!-- Ícones do Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/745489aff3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
