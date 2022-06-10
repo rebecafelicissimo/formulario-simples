@@ -61,23 +61,21 @@ body {
 
 /* Comportamento dos olhos setados por padrão */
 /* olho aberto visível */
-.form-control i.fa-eye {
+.form-control i.eye-style {
   position: absolute;
   top: 45px;
   right: 35px;
-  visibility: visible;
   color: #969696;
   cursor: pointer;
 }
 
+.form-control i.fa-eye {  
+  visibility: visible;
+}
+
 /* olho fechado escondido */
-.form-control i.fa-eye-slash {
-  position: absolute;
-  top: 45px;
-  right: 35px;
-  visibility: hidden;
-  color: #969696;
-  cursor: pointer;
+.form-control i.fa-eye-slash {  
+  visibility: hidden;  
 }
 
 /* Quando eu quiser que a senha apareça */
