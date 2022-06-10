@@ -83,8 +83,8 @@ function checkEmail(email) {
 
 // Mostrar e Ocultar a senha
 const getPasswordInput = document.getElementById('password')
-const openEye = document.getElementById('openEye')
-const closeEye = document.getElementById('closeEye')
+// const openEye = document.getElementById('openEye')
+// const closeEye = document.getElementById('closeEye')
 
 function showOrHidePassword() {
   const inputTypePassword = getPasswordInput.type === 'password'
